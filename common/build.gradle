@@ -1,0 +1,11 @@
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    compileOnly rootProject.ext.dependencies['lombok']
+    annotationProcessor rootProject.ext.dependencies['lombok']
+    implementation rootProject.ext.dependencies['hibernate-validator']
+    implementation rootProject.ext.dependencies['orika-starter']
+    implementation rootProject.ext.dependencies['swagger-starter']
+    implementation rootProject.ext.dependencies['redis-starter']
+    implementation rootProject.ext.dependencies['okhttp']
+    implementation rootProject.ext.dependencies['slf4j']
+}

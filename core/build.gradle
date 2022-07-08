@@ -1,0 +1,16 @@
+dependencies {
+
+    implementation project(':common')
+    implementation rootProject.ext.dependencies['slf4j']
+    implementation rootProject.ext.dependencies['spring-redis']
+    implementation rootProject.ext.dependencies['okhttp']
+    implementation rootProject.ext.dependencies['orika-starter']
+    implementation rootProject.ext.dependencies['hibernate-validator']
+    implementation rootProject.ext.dependencies['hutool']
+    implementation rootProject.ext.dependencies['jackson-databind']
+    implementation rootProject.ext.dependencies['jackson-datatype-jsr310']
+    implementation rootProject.ext.dependencies['jackson-datatype-jdk8']
+    implementation rootProject.ext.dependencies['aspectj']
+    implementation rootProject.ext.dependencies['junit']
+}
+

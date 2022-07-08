@@ -1,0 +1,107 @@
+// 定义脚本使用资源
+buildscript {
+    // 引入所需要的依赖库文件
+    apply from: 'config.gradle'
+    // 脚本资源仓库
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/public' }
+    }
+    // 依赖库
+    dependencies {
+        classpath rootProject.ext.dependencies.'springBootGradlePlugin'
+    }
+}
+
+// 引用依赖配置文件，应用全局配置
+apply from: "config.gradle"
+// 所有项目的通用配置
+allprojects {
+    // 项目的默认名称和版本
+    group 'com.zhuzs.springcloud'
+    version '1.0-SNAPSHOT'
+    // 使用插件
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'maven-publish'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    // 指定编译.java文件的jdk版本
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+    // java编译的时候缺省状态下会因为中文字符而失败
+    [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+    // 指定仓库地址
+    repositories {
+        mavenLocal()
+        maven {
+            allowInsecureProtocol = true
+            url = 'http://nexus.ulitom.com/repository/maven-public/'
+        }
+        maven {
+            allowInsecureProtocol = true
+            url 'https://maven.aliyun.com/repository/public'
+        }
+        mavenCentral()
+    }
+}
+
+// 所有子项目的通用配置
+subprojects {
+    if (name.endsWith("common")) {
+        // common 模块 打包成普通jar
+        apply plugin: 'java-library'
+        bootJar.setEnabled(false)
+        jar.setEnabled(true)
+    } else {
+        dependencies {
+            implementation 'org.springframework.boot:spring-boot-starter'
+            implementation 'org.springframework.boot:spring-boot-starter-web'
+            testImplementation 'org.springframework.boot:spring-boot-starter-test'
+            compileOnly rootProject.ext.dependencies['lombok']
+            annotationProcessor rootProject.ext.dependencies['lombok']
+            implementation rootProject.ext.dependencies['redis-starter']
+            implementation rootProject.ext.dependencies['rocketmq-spring-boot-starter']
+//            implementation rootProject.ext.dependencies['swagger-starter']
+        }
+        dependencyManagement {
+            imports {
+                mavenBom "org.springframework.cloud:spring-cloud-dependencies:${rootProject.ext.version.springCloud}"
+                mavenBom "com.alibaba.cloud:spring-cloud-alibaba-dependencies:${rootProject.ext.version.springCloudAlibaba}"
+            }
+        }
+        test {
+            useJUnitPlatform()
+        }
+
+
+        // 打包源码
+        task sourceJar(type: Jar) {
+            from sourceSets.main.allJava
+        }
+
+        // 版本发布
+//        publishing {
+//            publications {
+//                maven(MavenPublication) {
+//                    from components.java
+//                    artifact sourceJar {
+//                        classifier "sources"
+//                    }
+//                }
+//            }
+//            repositories {
+//                maven {
+//                    allowInsecureProtocol = true
+////                    def releases = "http://nexus.ulitom.com/repository/maven-releases/"
+////                    def snapshots = "http://nexus.ulitom.com/repository/maven-snapshots/"
+//                    url = version.endsWith('SNAPSHOT') ? snapshots : releases
+//                    credentials {
+//                        username = 'zhuzs'
+//                        password = 'zhuzs'
+//                    }
+//                }
+//            }
+//        }
+    }
+}

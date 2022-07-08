@@ -1,0 +1,20 @@
+server:
+  port: 8802
+
+spring:
+  application:
+    name: productor-service
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        username: nacos
+        password: nacos
+        server-addr: 127.0.0.1:8848
+        namespace:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+        group: DEFAULT_GROUP
+        prefix: productor-service-dev

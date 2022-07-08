@@ -1,0 +1,18 @@
+{
+  "properties": [
+    {
+      "name": "spring.cloud.discovery.username",
+      "type": "java.lang.String",
+      "description": "Description for spring.cloud.discovery.username."
+    },
+    {
+      "name": "spring.cloud.nacos.config.group",
+      "type": "java.lang.String",
+      "description": "Description for spring.cloud.nacos.config.group."
+    },
+    {
+      "name": "spring.cloud.nacos.config.server-addr",
+      "type": "java.lang.String",
+      "description": "Description for spring.cloud.nacos.config.server-addr."
+    }
+  ] }

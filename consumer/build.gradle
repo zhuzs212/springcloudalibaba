@@ -1,0 +1,14 @@
+dependencies {
+    implementation rootProject.ext.dependencies['slf4j']
+    implementation rootProject.ext.dependencies['hibernate-validator']
+
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+    implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery'
+    implementation 'org.springframework.cloud:spring-cloud-starter-loadbalancer'
+    implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-sentinel'
+
+    implementation rootProject.ext.dependencies['duolian-common']
+    implementation rootProject.ext.dependencies['duolian-payment-client']
+//    implementation rootProject.ext.dependencies['swagger-annotations']
+
+}

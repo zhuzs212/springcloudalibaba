@@ -1,0 +1,71 @@
+ext {
+    version = [
+            duolian           : "latest.integration",
+            springboot        : "2.6.3",
+            springCloud       : "2021.0.1",
+            loadbalancer      : "3.1.2",
+            springCloudAlibaba: "2021.0.1.0",
+            spring            : "5.3.18",
+            lombok            : "1.18.22",
+            mysql             : "8.0.28",
+            fastjson          : "1.2.76",
+            okhttp            : "4.9.3",
+            swaggerStarter    : "3.0.0",
+            hutool            : "5.7.22",
+            druidStarter      : "1.2.9",
+            slf4j             : "1.7.36",
+            springRedis       : "2.6.3",
+            // 对象拷贝工具
+            orika             : "2.2.6",
+            mybatisStarter    : "2.2.2",
+            mybatisJsr310     : "1.0.2",
+            sqlhelper         : "3.6.10",
+            junit             : "5.6.2",
+            validationApi     : "3.0.0",
+            hiberValidator    : "6.2.3.Final",
+            swaggerAnno       : "1.5.20",
+            jackson           : "2.13.2",
+            aspectj           : "1.9.9.1",
+            rocketmq          : "2.2.2",
+            bootstrap         : "3.1.3",
+    ]
+    dependencies = [
+            // springboot版本管理器, springboot对gradle的支持
+            "springBootGradlePlugin"        : "org.springframework.boot:spring-boot-gradle-plugin:${version.springboot}",
+            // https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-spring-boot-starter
+            "rocketmq-spring-boot-starter"  : "org.apache.rocketmq:rocketmq-spring-boot-starter:${version.rocketmq}",
+            "duolian-payment-client"        : "com.duolian.fls:duolian-payment-client:${version.duolian}",
+            "duolian-common"                : "com.duolian.fls:duolian-common:${version.duolian}",
+
+            "mysql"                         : "mysql:mysql-connector-java:${version.mysql}",
+            "swagger-starter"               : "io.springfox:springfox-boot-starter:${version.swaggerStarter}",
+            "swagger-annotations"           : "io.swagger:swagger-annotations:${version.swaggerAnno}",
+            "fastjson"                      : "com.alibaba:fastjson:${version.fastjson}",
+            "okhttp"                        : "com.squareup.okhttp3:okhttp:${version.okhttp}",
+            "lombok"                        : "org.projectlombok:lombok:${version.lombok}",
+            "redis-starter"                 : "org.springframework.boot:spring-boot-starter-data-redis:${version.springboot}",
+            "thymeleaf"                     : "org.springframework.boot:spring-boot-starter-thymeleaf:${version.springboot}",
+            "validation-starter"            : "org.springframework.boot:spring-boot-starter-validation:${version.springboot}",
+            "hutool"                        : "cn.hutool:hutool-all:${version.hutool}",
+            "druid-starter"                 : "com.alibaba:druid-spring-boot-starter:${version.druidStarter}",
+            "spring-redis"                  : "org.springframework.data:spring-data-redis:${version.springRedis}",
+            "orika-starter"                 : "dev.akkinoc.spring.boot:orika-spring-boot-starter:${version.orika}",
+            "mybatis-starter"               : "org.mybatis.spring.boot:mybatis-spring-boot-starter:${version.mybatisStarter}",
+            "sqlhelper"                     : "com.github.fangjinuo.sqlhelper:sqlhelper-mybatis-spring-boot-starter:${version.sqlhelper}",
+            "sqlhelper-config"              : "com.github.fangjinuo.sqlhelper:sqlhelper-mybatis-spring-boot-autoconfigure:${version.sqlhelper}",
+            "junit"                         : "org.junit.jupiter:junit-jupiter-engine:${version.junit}",
+            "validation-api"                : "jakarta.validation:jakarta.validation-api:${version.validationApi}",
+            "hibernate-validator"           : "org.hibernate.validator:hibernate-validator:${version.hiberValidator}",
+            "slf4j"                         : "org.slf4j:slf4j-api:${version.slf4j}",
+            "jackson-core"                  : "com.fasterxml.jackson.core:jackson-core:${version.jackson}",
+            "jackson-databind"              : "com.fasterxml.jackson.core:jackson-databind:${version.jackson}",
+            "jackson-datatype-jdk8"         : "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:${version.jackson}",
+            "jackson-datatype-jsr310"       : "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:${version.jackson}",
+            "jackson-dataformat-xml"        : "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:${version.jackson}",
+            "aspectj"                       : "org.aspectj:aspectjweaver:${version.aspectj}",
+            "spring-cloud-starter-bootstrap": "org.springframework.cloud:spring-cloud-starter-bootstrap:${version.bootstrap}",
+
+    ]
+
+}
+

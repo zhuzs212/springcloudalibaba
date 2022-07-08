@@ -1,0 +1,30 @@
+# server配置
+server:
+  port: 8801
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /
+
+# spring配置
+spring:
+  application:
+    name: consumer-service
+  cloud:
+    nacos:
+      discovery:
+#         121.40.108.150
+        server-addr: 121.40.108.150:8848
+        username: nacos
+        password: nacos
+        namespace:
+    # 是否集成Ribbon
+
+# 启用 sentinel 熔断降级
+feign:
+  sentinel:
+    enabled: true
+
+# 日志记录
+logging:
+  config: classpath:logback.xml
