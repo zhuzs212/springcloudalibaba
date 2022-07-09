@@ -5,18 +5,109 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="785ef433-ad72-402f-a762-246e3407656a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/productor/src/main/java/com/springcloud/productor/demo/NacosConfigReadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/productor/src/main/java/com/springcloud/productor/demo/NacosConfigReadController.java" afterDir="false" />
-    </list>
-    <list id="0ad32fde-2cc3-465e-be66-fdca3d6c8518" name="NOT COMMIT" comment="NOT COMMIT">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/advice/CustomExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/advice/CustomExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/config/MapperFadeConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/config/MapperFadeConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/exception/RedisError.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/exception/RedisError.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/exception/RedisException.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/exception/RedisException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/exception/ServiceException.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/exception/ServiceException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/exception/SysExceptionEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/exception/SysExceptionEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/model/BaseMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/model/BaseMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/model/BaseResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/model/BaseResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/model/PageQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/model/PageQuery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/model/PageResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/model/PageResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/util/BaseResponseUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/util/BaseResponseUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/util/OkHttpUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/util/OkHttpUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/util/RedisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/util/RedisUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/build/classes/java/main/com/springcloud/sonsumer/ConsumerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/build/classes/java/main/com/springcloud/sonsumer/ConsumerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/build/classes/java/main/com/springcloud/sonsumer/config/RestTemplateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/build/classes/java/main/com/springcloud/sonsumer/config/RestTemplateConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/build/classes/java/main/com/springcloud/sonsumer/demo/ConsumerRestTemplateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/build/classes/java/main/com/springcloud/sonsumer/demo/ConsumerRestTemplateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/CoreApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/CoreApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/advice/CustomExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/advice/CustomExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/advice/CustomWrapHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/advice/CustomWrapHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/config/MapperFadeConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/config/MapperFadeConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/constant/OperationEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/constant/OperationEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/constant/ThreadTypeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/constant/ThreadTypeEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/controller/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/controller/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/exception/CoreExceptionEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/exception/CoreExceptionEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/interceptor/SecurityInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/interceptor/SecurityInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/ArrayDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/ArrayDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/BlockingQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/BlockingQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/Consumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/CreatThreadWay.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/CreatThreadWay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/DateDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/DateDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/GuardThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/GuardThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/MyThreadC.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/MyThreadC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/MyThreadO.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/MyThreadO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/MyThreadT.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/MyThreadT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/Producer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/ThreadPoolExecutorDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/ThreadPoolExecutorDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/aop/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/aop/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/aop/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/aop/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/aop/annotation/UserProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/aop/annotation/UserProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/aop/cglib/CglibProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/aop/cglib/CglibProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/aop/jdkproxy/JdkProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/aop/jdkproxy/JdkProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/aop/jdkproxy/JdkproxyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/aop/jdkproxy/JdkproxyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/DeadLockExample$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/DeadLockExample$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/DeadLockExample$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/DeadLockExample$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/DeadLockExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/DeadLockExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/LockDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/LockDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/NaiveLock$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/NaiveLock$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/NaiveLock$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/NaiveLock$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/NaiveLock.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/NaiveLock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/ReentrantLockDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/ReentrantLockDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/ReentrantLockExample$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/ReentrantLockExample$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/ReentrantLockExample$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/ReentrantLockExample$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/ReentrantLockExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/ReentrantLockExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/SolveDeadLockExample$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/SolveDeadLockExample$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/SolveDeadLockExample$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/SolveDeadLockExample$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/SolveDeadLockExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/lock/SolveDeadLockExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/thread/AbstractTaskThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/thread/AbstractTaskThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/thread/FileCopyThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/thread/FileCopyThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/thread/ScheduledThreadPoolFactory$Singleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/thread/ScheduledThreadPoolFactory$Singleton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/thread/ScheduledThreadPoolFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/thread/ScheduledThreadPoolFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/trycacth/TryCacthDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/springcloud/core/zhuzsdemo/trycacth/TryCacthDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/AQS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_cmp_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_d_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_d_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_d_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_d_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_d_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_j_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_j_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_j_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_j_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_k01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_k02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_k03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_k04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_k05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_k06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_k07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_m_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_m_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_r_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_r_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_r_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_r_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_r_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_sc_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_t_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/img_t_2.png" beforeDir="false" />
     </list>
+    <list id="0ad32fde-2cc3-465e-be66-fdca3d6c8518" name="NOT COMMIT" comment="test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -420,6 +511,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
