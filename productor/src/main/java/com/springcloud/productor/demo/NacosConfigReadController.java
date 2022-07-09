@@ -18,6 +18,10 @@ public class NacosConfigReadController {
     @Value("${address}")
     private String address;
 
+    /**
+     * 测试nacos 配置中心，自动刷新配置
+     * @return
+     */
     @RequestMapping("/getAddress")
     public String getAddress(){
         log.info("address: {}", address);
