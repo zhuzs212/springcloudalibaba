@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.rocketmq:rocketmq-spring-boot-starter:2.2.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/tools/gradle/caches/modules-2/files-2.1/org.apache.rocketmq/rocketmq-spring-boot-starter/2.2.2/fa96f10aa26a29c72d95f5a2807d0c165de8dcb5/rocketmq-spring-boot-starter-2.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/tools/gradle/caches/modules-2/files-2.1/org.apache.rocketmq/rocketmq-spring-boot-starter/2.2.2/b82af89d2a3411ada73815043328ebe41cbfd482/rocketmq-spring-boot-starter-2.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

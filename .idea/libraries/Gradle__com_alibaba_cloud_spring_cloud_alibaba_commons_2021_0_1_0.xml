@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.alibaba.cloud:spring-cloud-alibaba-commons:2021.0.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/tools/gradle/caches/modules-2/files-2.1/com.alibaba.cloud/spring-cloud-alibaba-commons/2021.0.1.0/170e6b768b2c86cb7a1ea40e6e11fdeaff4f5128/spring-cloud-alibaba-commons-2021.0.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/tools/gradle/caches/modules-2/files-2.1/com.alibaba.cloud/spring-cloud-alibaba-commons/2021.0.1.0/8a7d136d2e8ada9ed15ff8c8457554db4cff0431/spring-cloud-alibaba-commons-2021.0.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

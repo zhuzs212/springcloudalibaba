@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.alibaba.csp:sentinel-spring-webflux-adapter:1.8.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/tools/gradle/caches/modules-2/files-2.1/com.alibaba.csp/sentinel-spring-webflux-adapter/1.8.3/f8127ec186967d434bf31036b0dd761dd862b/sentinel-spring-webflux-adapter-1.8.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/tools/gradle/caches/modules-2/files-2.1/com.alibaba.csp/sentinel-spring-webflux-adapter/1.8.3/c48ffee1f1fb44b6fc5404c9fc207cec2905f8e7/sentinel-spring-webflux-adapter-1.8.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

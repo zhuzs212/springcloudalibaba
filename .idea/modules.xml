@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springcloudalibaba.iml" filepath="$PROJECT_DIR$/.idea/modules/springcloudalibaba.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/springcloudalibaba.common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/springcloudalibaba.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/springcloudalibaba.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/springcloudalibaba.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/springcloudalibaba.common.test.iml" filepath="$PROJECT_DIR$/.idea/modules/common/springcloudalibaba.common.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer/springcloudalibaba.consumer.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer/springcloudalibaba.consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer/springcloudalibaba.consumer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer/springcloudalibaba.consumer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer/springcloudalibaba.consumer.test.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer/springcloudalibaba.consumer.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/springcloudalibaba.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/springcloudalibaba.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/springcloudalibaba.core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/springcloudalibaba.core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/springcloudalibaba.core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/core/springcloudalibaba.core.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springcloudalibaba.main.iml" filepath="$PROJECT_DIR$/.idea/modules/springcloudalibaba.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/productor/springcloudalibaba.productor.iml" filepath="$PROJECT_DIR$/.idea/modules/productor/springcloudalibaba.productor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/productor/springcloudalibaba.productor.main.iml" filepath="$PROJECT_DIR$/.idea/modules/productor/springcloudalibaba.productor.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/productor/springcloudalibaba.productor.test.iml" filepath="$PROJECT_DIR$/.idea/modules/productor/springcloudalibaba.productor.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springcloudalibaba.test.iml" filepath="$PROJECT_DIR$/.idea/modules/springcloudalibaba.test.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.alibaba.csp:sentinel-transport-simple-http:1.8.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/tools/gradle/caches/modules-2/files-2.1/com.alibaba.csp/sentinel-transport-simple-http/1.8.3/e664a5447a21d15c53212741be9b0c4290c910be/sentinel-transport-simple-http-1.8.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/tools/gradle/caches/modules-2/files-2.1/com.alibaba.csp/sentinel-transport-simple-http/1.8.3/ca5e52175c7671d343dafa204249c1929955cf78/sentinel-transport-simple-http-1.8.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

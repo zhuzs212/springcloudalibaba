@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.alibaba.csp:sentinel-annotation-aspectj:1.8.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/tools/gradle/caches/modules-2/files-2.1/com.alibaba.csp/sentinel-annotation-aspectj/1.8.3/dd77a01c7f005bdb38af3e6e093c36664611a4ec/sentinel-annotation-aspectj-1.8.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/tools/gradle/caches/modules-2/files-2.1/com.alibaba.csp/sentinel-annotation-aspectj/1.8.3/bad241503de6688a73f540070cf492025fcf0959/sentinel-annotation-aspectj-1.8.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

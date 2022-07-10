@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.alibaba.nacos:nacos-common:1.4.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/tools/gradle/caches/modules-2/files-2.1/com.alibaba.nacos/nacos-common/1.4.2/54285dc3fef533bf52208f66b93f1d971bd8b4cc/nacos-common-1.4.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/tools/gradle/caches/modules-2/files-2.1/com.alibaba.nacos/nacos-common/1.4.2/281b928230edcd3d784ece407cceea1d3f25df6a/nacos-common-1.4.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
