@@ -23,5 +23,4 @@ public class NacosConfigReadController {
         log.info("address: {}", address);
         return address;
     }
-
 }

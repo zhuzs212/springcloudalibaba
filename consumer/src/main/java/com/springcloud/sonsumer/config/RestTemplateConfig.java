@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 /**
+ * 负载均衡
  * RestTemplate 配置
  *
  * @author zhu_zishuang

@@ -2,7 +2,6 @@ package com.springcloud.core.zhuzsdemo;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.FutureTask;
-
 /**
  * 线程的分类 & 创建方式
  * <p>
@@ -62,7 +61,6 @@ public class CreatThreadWay {
         new Thread(mt2).start();
         new Thread(mt3).start();
 
-
         // 实例化继承Runnable接口的MyThread类
         Runnable mt4 = new MyThreadT("线程四");
         Runnable mt5 = new MyThreadT("线程五");
@@ -109,7 +107,6 @@ public class CreatThreadWay {
         // 取消线程
         task.cancel(true);
     }
-
 
 }
 

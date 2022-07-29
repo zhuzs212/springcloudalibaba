@@ -40,10 +40,10 @@ public interface BaseMapper<BO> {
 
     /**
      * 批量更新
-     * @param BOs
+     * @param boList
      * @return
      */
-    int updates(List<BO> BOs);
+    int updates(List<BO> boList);
 
     /**
      * 列表查询
@@ -61,8 +61,8 @@ public interface BaseMapper<BO> {
 
     /**
      * 批量新增
-     * @param BOs
+     * @param boList
      * @return
      */
-    int inserts(List<BO> BOs);
+    int inserts(List<BO> boList);
 }

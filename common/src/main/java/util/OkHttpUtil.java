@@ -23,14 +23,21 @@ import java.util.stream.Collectors;
  */
 @Component
 public class OkHttpUtil {
-
     @Autowired
     private OkHttpClient okHttpClient;
-    @Autowired
-    private ObjectMapper mapper;
+//    @Autowired
+//    private ObjectMapper mapper;
 
+    /**
+     * TODO
+     *  entity to json 此处设置，RootName 不生效问题
+     *  mapper.enable(SerializationFeature.WRAP_ROOT_VALUE);
+     *
+     * 初始化顺序 成员变量初始化 -> Constructor -> @Autowired
+     */
+
+    private static ObjectMapper mapper = ApplicationContextHelperUtil.getBean(ObjectMapper.class);
     private final Logger log = LoggerFactory.getLogger(OkHttpUtil.class);
-
     public static final MediaType MEDIA_TYPE_FORM = MediaType.parse("application/x-www-form-urlencoded");
     public static final MediaType MEDIA_TYPE_JSON = MediaType.parse("application/json; charset=utf-8");
     public static final MediaType MEDIA_TYPE_XML = MediaType.parse("application/xml; charset=utf-8");
@@ -47,7 +54,6 @@ public class OkHttpUtil {
     public String get(String url) {
         return get(url, null, null);
     }
-
 
     /**
      * get 请求
@@ -70,7 +76,6 @@ public class OkHttpUtil {
     public String get(String url, String[] headers) {
         return get(url, null, headers);
     }
-
 
     /**
      * get 请求
@@ -192,7 +197,7 @@ public class OkHttpUtil {
      * @return string
      */
     public Response post(String url, String token, String data, MediaType mediaType) {
-        log.info("do post request and url[{}], mediaType={}", url,mediaType);
+        log.info("do post request and url[{}], mediaType={}", url, mediaType);
         RequestBody requestBody = RequestBody.create(data, mediaType);
         Request request = new Request.Builder().url(url).addHeader("Authorization", token).post(requestBody).build();
         try {
@@ -226,10 +231,11 @@ public class OkHttpUtil {
 
     /**
      * socket 请求, 请求数据为 xml 的字符串
-     * @param host 请求ip地址
-     * @param port 请求端口
-     * @param xmlData  请求数据, xml 字符串
-     * @param charset  字符集
+     *
+     * @param host    请求ip地址
+     * @param port    请求端口
+     * @param xmlData 请求数据, xml 字符串
+     * @param charset 字符集
      * @return string
      */
     public String socket(String host, Integer port, String xmlData, String charset) {
@@ -247,14 +253,14 @@ public class OkHttpUtil {
                 writer.write(xmlData);
                 writer.flush();
                 bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream(), charset));
-                result =  bufferedReader.lines().collect(Collectors.joining());
+                result = bufferedReader.lines().collect(Collectors.joining());
             } else {
-                log.error("请求异常，{}服务器超时",host);
+                log.error("请求异常，{}服务器超时", host);
             }
         } catch (UnknownHostException e) {
-            log.error("请求异常，未知的服务器={}",host);
+            log.error("请求异常，未知的服务器={}", host);
         } catch (IOException e) {
-            log.error("请求异常，host={},port={}",host, port);
+            log.error("请求异常，host={},port={}", host, port);
         } finally {
             try {
                 if (writer != null && bufferedReader != null & socket != null) {

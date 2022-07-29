@@ -21,6 +21,6 @@ public class ProductorNacosController {
     public String reduce() {
         return "扣减库存成功！port: " + port;
     }
-
-
 }
+
+
