@@ -1,10 +1,12 @@
-package exception;
+package common;
+
+import common.ExceptionInterface;
 
 /**
  * @author zhuzishuang
  * @date 2022/5/17
  */
-public enum RedisError implements ExceptionInterface {
+public enum RedisErrorEnum implements ExceptionInterface {
 
     /**
      * 获取redis连接池错误
@@ -18,7 +20,7 @@ public enum RedisError implements ExceptionInterface {
     private Integer code = null;
     private String message = null;
 
-    RedisError(Integer errCode, String errMessage) {
+    RedisErrorEnum(Integer errCode, String errMessage) {
         this.code = errCode;
         this.message = errMessage;
     }

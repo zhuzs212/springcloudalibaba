@@ -2,9 +2,9 @@ package util;
 
 import model.BaseResponse;
 import common.Constant;
-import exception.ExceptionInterface;
+import common.ExceptionInterface;
 import exception.ServiceException;
-import exception.SysExceptionEnum;
+import common.SysExceptionEnum;
 
 /**
  * 通用返回数据模型
@@ -28,7 +28,7 @@ public final class BaseResponseUtil {
      * 构造器私有，防止外部实例化
      */
     private BaseResponseUtil() {
-        // 防止反射
+        // TODO 可抛出异常，防止通过反射实例化对象
         throw new ServiceException(SysExceptionEnum.SYS_EXCEPTION);
     }
 

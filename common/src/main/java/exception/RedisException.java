@@ -1,5 +1,6 @@
 package exception;
 
+import common.ExceptionInterface;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

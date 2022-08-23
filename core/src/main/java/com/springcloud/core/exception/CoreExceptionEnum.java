@@ -1,7 +1,7 @@
 package com.springcloud.core.exception;
 
 
-import exception.ExceptionInterface;
+import common.ExceptionInterface;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

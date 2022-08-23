@@ -1,4 +1,4 @@
-package exception;
+package common;
 
 /**
  * 枚举类 封装

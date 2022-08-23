@@ -1,7 +1,7 @@
 package com.springcloud.core.advice;
 
 import exception.ServiceException;
-import exception.SysExceptionEnum;
+import common.SysExceptionEnum;
 import lombok.extern.slf4j.Slf4j;
 import model.BaseResponse;
 import org.springframework.validation.FieldError;

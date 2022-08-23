@@ -1,5 +1,7 @@
 package exception;
 
+import common.ExceptionInterface;
+
 /**
  * 业务异常类
  *

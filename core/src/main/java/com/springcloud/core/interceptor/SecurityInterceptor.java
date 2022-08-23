@@ -2,7 +2,7 @@ package com.springcloud.core.interceptor;
 
 import com.springcloud.core.constant.Constant;
 import exception.ServiceException;
-import exception.SysExceptionEnum;
+import common.SysExceptionEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;

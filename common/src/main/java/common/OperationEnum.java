@@ -1,6 +1,5 @@
-package com.springcloud.core.constant;
+package common;
 
-import common.ExceptionInterface;
 import lombok.AllArgsConstructor;
 import lombok.experimental.Accessors;
 

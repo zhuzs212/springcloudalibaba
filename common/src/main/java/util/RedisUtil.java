@@ -3,7 +3,7 @@ package util;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import exception.RedisError;
+import common.RedisErrorEnum;
 import exception.RedisException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,13 +43,13 @@ public class RedisUtil {
             throws RedisException {
         if (ObjectUtils.isEmpty(key) || time < 0) {
             log.error("入参为空,key={}, value={}", key, time);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             redisTemplate.expire(key, time, TimeUnit.SECONDS);
         } catch (Exception e) {
             log.error("REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -67,13 +67,13 @@ public class RedisUtil {
             throws RedisException {
         if (ObjectUtils.isEmpty(key) || time < 0) {
             log.error("入参为空,key={}, value={}", key, time);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             redisTemplate.expire(key, time, timeUnit);
         } catch (Exception e) {
             log.error("REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -90,13 +90,13 @@ public class RedisUtil {
             throws RedisException {
         if (ObjectUtils.isEmpty(key) || expireDate == null) {
             log.error("入参为空,key={}, expireDate={}", key, expireDate);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             redisTemplate.expireAt(key, expireDate);
         } catch (Exception e) {
             log.error("REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -109,13 +109,13 @@ public class RedisUtil {
     public Long getExpire(final String key) throws RedisException {
         if (ObjectUtils.isEmpty(key)) {
             log.error("入参为空,key={}", key);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             return redisTemplate.getExpire(key);
         } catch (Exception e) {
             log.error("REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -130,13 +130,13 @@ public class RedisUtil {
             throws RedisException {
         if (ObjectUtils.isEmpty(key) || ObjectUtils.isEmpty(value)) {
             log.error("入参为空,key={}, value={}", key, value);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             redisTemplate.opsForValue().set(key, value);
         } catch (Exception e) {
             log.error("REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -151,13 +151,13 @@ public class RedisUtil {
             throws RedisException {
         if (ObjectUtils.isEmpty(key)) {
             log.error("入参为空,key={}", key);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             return redisTemplate.hasKey(key);
         } catch (Exception e) {
             log.error("读取REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -171,14 +171,14 @@ public class RedisUtil {
             throws RedisException {
         if (ObjectUtils.isEmpty(key)) {
             log.error("入参为空,key={}", key);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             Object obj = redisTemplate.opsForValue().get(key);
             return mapper.readValue(mapper.writeValueAsString(obj), clazz);
         } catch (Exception e) {
             log.error("读取REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -186,7 +186,7 @@ public class RedisUtil {
             throws RedisException {
         if (ObjectUtils.isEmpty(key)) {
             log.error("入参为空,key={}", key);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             Object obj = redisTemplate.opsForValue().get(key);
@@ -194,7 +194,7 @@ public class RedisUtil {
             return mapper.readValue(mapper.writeValueAsString(obj), javaType);
         } catch (Exception e) {
             log.error("读取REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -214,14 +214,14 @@ public class RedisUtil {
             } catch (JsonProcessingException e) {
                 e.printStackTrace();
             }
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         long result = 0;
         try {
             result = redisTemplate.delete((Collection<String>) CollectionUtils.arrayToList(keys));
         } catch (Exception e) {
             log.error("读取REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
         return result;
     }
@@ -239,13 +239,13 @@ public class RedisUtil {
         // 允许value值为空
         if (ObjectUtils.isEmpty(key) || ObjectUtils.isEmpty(hashkey)) {
             log.error("入参为空,key={},field={},value={}", key, hashkey, value);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             redisTemplate.opsForHash().put(key, hashkey, value);
         } catch (Exception e) {
             log.error("REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -260,14 +260,14 @@ public class RedisUtil {
             throws RedisException {
         if (ObjectUtils.isEmpty(key) || ObjectUtils.isEmpty(hashKey)) {
             log.error("入参为空,key={},field={}", key, hashKey);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             Object obj = redisTemplate.opsForHash().get(key, hashKey);
             return mapper.readValue(mapper.writeValueAsString(obj), clazz);
         } catch (Exception e) {
             log.error("读取REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -282,7 +282,7 @@ public class RedisUtil {
             throws RedisException {
         if (ObjectUtils.isEmpty(key) || ObjectUtils.isEmpty(hashKey)) {
             log.error("入参为空,key={},field={}", key, hashKey);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             Object obj = redisTemplate.opsForHash().get(key, hashKey);
@@ -290,7 +290,7 @@ public class RedisUtil {
             return mapper.readValue(mapper.writeValueAsString(obj), javaType);
         } catch (Exception e) {
             log.error("读取REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -304,13 +304,13 @@ public class RedisUtil {
             throws RedisException {
         if (ObjectUtils.isEmpty(key)) {
             log.error("入参为空,key={}", key);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             return redisTemplate.opsForHash().entries(key);
         } catch (Exception e) {
             log.error("读取REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -324,13 +324,13 @@ public class RedisUtil {
             throws RedisException {
         if (ObjectUtils.isEmpty(key)) {
             log.error("入参为空,key={}", key);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             return redisTemplate.opsForHash().multiGet(key, hashKeys);
         } catch (Exception e) {
             log.error("读取REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -346,13 +346,13 @@ public class RedisUtil {
             throws RedisException {
         if (ObjectUtils.isEmpty(key) || ObjectUtils.isEmpty(hashKey)) {
             log.error("入参为空,key={},field={}", key, hashKey);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             return redisTemplate.opsForHash().delete(key, hashKey);
         } catch (Exception e) {
             log.error("删除REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -368,13 +368,13 @@ public class RedisUtil {
             throws RedisException {
         if (ObjectUtils.isEmpty(key) || ObjectUtils.isEmpty(hashKey)) {
             log.error("入参为空,key={},field={}", key, hashKey);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             return redisTemplate.opsForHash().hasKey(key, hashKey);
         } catch (Exception e) {
             log.error("查询REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -386,14 +386,14 @@ public class RedisUtil {
     public long increment(String key) {
         if (ObjectUtils.isEmpty(key) ) {
             log.error("入参为空,key={}", key);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             RedisAtomicLong counter = new RedisAtomicLong(key, redisTemplate.getConnectionFactory());
             return counter.incrementAndGet();
         } catch (Exception e) {
             log.error("查询REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -407,7 +407,7 @@ public class RedisUtil {
     public long increment(String key, Date expireTime) {
         if (ObjectUtils.isEmpty(key) ||  ObjectUtils.isEmpty(expireTime)) {
             log.error("入参为空,key={}", key);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             RedisAtomicLong counter = new RedisAtomicLong(key, redisTemplate.getConnectionFactory());
@@ -415,7 +415,7 @@ public class RedisUtil {
             return counter.incrementAndGet();
         } catch (Exception e) {
             log.error("查询REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -428,14 +428,14 @@ public class RedisUtil {
     public long increment(String key, int steps) {
         if (ObjectUtils.isEmpty(key) || 0 == steps) {
             log.error("入参为空,key={}", key);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             RedisAtomicLong counter = new RedisAtomicLong(key, redisTemplate.getConnectionFactory());
             return counter.addAndGet(steps);
         } catch (Exception e) {
             log.error("查询REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -450,7 +450,7 @@ public class RedisUtil {
     public long increment(String key, int steps, Date expireTime) {
         if (ObjectUtils.isEmpty(key) || 0 == steps) {
             log.error("入参为空,key={}", key);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             RedisAtomicLong counter = new RedisAtomicLong(key, redisTemplate.getConnectionFactory());
@@ -458,7 +458,7 @@ public class RedisUtil {
             return counter.addAndGet(steps);
         } catch (Exception e) {
             log.error("查询REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 
@@ -470,14 +470,14 @@ public class RedisUtil {
     public long decrement(String key) {
         if (ObjectUtils.isEmpty(key)) {
             log.error("入参为空,key={}", key);
-            throw new RedisException(RedisError.REDIS_PARAM_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_PARAM_EXCEPTION);
         }
         try {
             RedisAtomicLong counter = new RedisAtomicLong(key, redisTemplate.getConnectionFactory());
             return counter.decrementAndGet();
         } catch (Exception e) {
             log.error("查询REDIS数据失败，连接异常，请检查相关配置。错误：{}", e.getMessage());
-            throw new RedisException(RedisError.REDIS_CONN_EXCEPTION);
+            throw new RedisException(RedisErrorEnum.REDIS_CONN_EXCEPTION);
         }
     }
 }

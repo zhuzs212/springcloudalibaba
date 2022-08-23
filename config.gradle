@@ -66,6 +66,5 @@ ext {
             "spring-cloud-starter-bootstrap": "org.springframework.cloud:spring-cloud-starter-bootstrap:${version.bootstrap}",
 
     ]
-
 }
 

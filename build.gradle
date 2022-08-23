@@ -39,6 +39,7 @@ allprojects {
             url = 'http://nexus.ulitom.com/repository/maven-public/'
         }
         maven {
+            // 允许不安全协议
             allowInsecureProtocol = true
             url 'https://maven.aliyun.com/repository/public'
         }

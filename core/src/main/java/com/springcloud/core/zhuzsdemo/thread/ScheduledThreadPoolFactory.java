@@ -2,7 +2,7 @@ package com.springcloud.core.zhuzsdemo.thread;
 
 import cn.hutool.core.thread.ThreadFactoryBuilder;
 import exception.ServiceException;
-import exception.SysExceptionEnum;
+import common.SysExceptionEnum;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ScheduledThreadPoolExecutor;

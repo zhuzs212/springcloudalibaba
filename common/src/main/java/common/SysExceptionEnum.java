@@ -1,4 +1,4 @@
-package exception;
+package common;
 
 
 import lombok.AllArgsConstructor;
