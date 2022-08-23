@@ -11,9 +11,9 @@
 
 
 ## RocketMQ
-###1 简介
-####1.1 特性
-######RcoketMQ 是一款低延迟、高可靠、可伸缩、易于使用的消息中间件。具有以下特性：
+### 1 简介
+#### 1.1 特性
+###### RcoketMQ 是一款低延迟、高可靠、可伸缩、易于使用的消息中间件。具有以下特性：
 <details>
     
     - 支持发布/订阅（Pub/Sub）和点对点（P2P）消息模型
@@ -27,8 +27,8 @@
 
 </details>
 
-####1.2 RocketMQ 存储结构
-######https://blog.nowcoder.net/n/152d8b0760e743249812139c50c8807a?from=nowcoder_improve
+#### 1.2 RocketMQ 存储结构
+###### https://blog.nowcoder.net/n/152d8b0760e743249812139c50c8807a?from=nowcoder_improve
     RocketMQ对应的存储文件主要包括三类：
     - Commitlog文件
     - ConsumeQueue文件
@@ -48,7 +48,7 @@
     - 文件存储机制：RocketMq采用文件系统存储消息，采用顺序写的方式写入消息，使用零拷贝发送消息，这三者的结合极大地保证了RocketMq的性能
 </details>
 
-####1.3 主要组成 及 执行流程
+#### 1.3 主要组成 及 执行流程
 <details>
 
     - NameServer
@@ -78,7 +78,7 @@
     Step6：Producer处理回查消息，返回对应的本地事务的执行结果；
     Step7：Broker针对回查消息的结果，执行Commit或Rollback操作，同Step4。
   
-###2.RocketMQ 安装及配置
+### 2.RocketMQ 安装及配置
 <details>
 
     # 启动命令，并且常驻内存，nohup 属于后台启动，当前目录下生成 nohup.out 日志文件，也可以指定日志输出位置。
@@ -118,18 +118,18 @@
     ./bin/mqadmin topicRoute -n 127.0.0.1:9876 -t MyTopic
 </details>
 
-###3.常见面试题
+### 3.常见面试题
 >https://blog.csdn.net/u012998254/article/details/114710123?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-114710123-blog-118978969.pc_relevant_default&spm=1001.2101.3001.4242.1&utm_relevant_index=2
 <details>
 
-####3.1 部署方式
+#### 3.1 部署方式
     - 单Master
     - 多Master多Slave模式，异步复制
       优点：较高的吞吐量。                                         缺点：毫秒级的延迟；若Master宕机、磁盘损坏，存在少量消息丢失的情况。
     - 多Master多Slave模式，同步双写
       优点：Master宕机情况下，消息无延迟，服务可用性与数据可用性都非常高。缺点就是：降低消息写入的效率，并影响系统的吞吐量。
 
-####3.2 Consumer 重复消费问题
+#### 3.2 Consumer 重复消费问题
     只要通过网络交换数据，就无法避免因为网络不可靠而造成的消息重复这个问题。
     比如说RocketMq中，当consumer消费完消息后，因为网络问题未及时发送ack到broker,broker就不会删掉当前已经消费过的消息，
     那么，该消息将会被重复投递给消费者去消费。虽然rocketMq保证了同一个消费组只能消费一次，但会被不同的消费组重复消费，
@@ -137,7 +137,7 @@
     措施：
     - 建立一张日志表，使用消息主键作为表的主键，在处理消息前，先insert表，再做消息处理。这样可以避免消息重复消费
 
-####3.* 消息丢失
+#### 3.* 消息丢失
     - 重试机制  
     - 定期重发
 </details>

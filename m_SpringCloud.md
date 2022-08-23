@@ -1,5 +1,5 @@
 ## 1 Spring
-####1 IOC
+#### 1 IOC
 <details>
 
     1.1 概念
@@ -42,7 +42,7 @@
          @ComponentScan(basePackages={""})
 </details>
 
-####2 AOP（Aspect Oriented Programming ）
+#### 2 AOP（Aspect Oriented Programming ）
 <details>
     2.1 概念
     - AOP（Aspect Oriented Programming ），面向切面编程,即: 不用修改源代码就可以扩展功能；
@@ -98,7 +98,7 @@
 
 </details> 
    
-####3 常用注解
+#### 3 常用注解
 <details>
 
     3.1 @Controller：用于标注控制器层组件
@@ -114,13 +114,13 @@
     3.8 @Resource：默认按名称进行自动装配，当找不到与名称匹配的Bean时会按类型装配。
 </details>
 
-####4 事务 @Transactional
+#### 4 事务 @Transactional
 https://blog.csdn.net/baidu_38083619/article/details/106085287
 <details>
 
-######4.1 简介
+###### 4.1 简介
     @Transaction 是 Spring 提供用来控制事务回滚/提交的一个注解，让我们从编程式注解转换到声明式注解。
-######4.2 作用域
+###### 4.2 作用域
     @Transaction 可以写在类、接口、方法上
 
     当标注在类上的时候：表示给该类所有的 public 方法添加上 @Transaction 注解。
@@ -129,6 +129,6 @@ https://blog.csdn.net/baidu_38083619/article/details/106085287
  
     当标注在方法上的时候：事务的作用域就只在该方法上生效，并且如果类及方法上都配置 @Transaction 注解时，方法的注解会覆盖类上的注解。
 
-######4.3 @Transactional 属性
+###### 4.3 @Transactional 属性
 ![img_sc_1.png](readme/img_sc_1.png)
 </details>

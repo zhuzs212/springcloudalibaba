@@ -69,7 +69,7 @@
 
 
  
-#####1 Zookeeper 在 Kafka 中的实际作用是什么？如果我不同时使用 Zookeeper 和 Kafka，我会错过什么好处？
+##### 1 Zookeeper 在 Kafka 中的实际作用是什么？如果我不同时使用 Zookeeper 和 Kafka，我会错过什么好处？
     
     Kafka 将 Zookeeper 用于以下用途：
     选举控制器。控制器是broker之一，负责维护所有分区的leader/follower关系。当一个节点关闭时，控制器会告诉其他副本成为分区领导者，以替换即将离开的节点上的分区领导者。Zookeeper 用于选举一个控制器，确保只有一个控制器，如果它崩溃，则选择一个新的控制器。

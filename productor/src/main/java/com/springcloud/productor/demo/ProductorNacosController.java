@@ -19,7 +19,7 @@ public class ProductorNacosController {
 
     @RequestMapping("/reduce")
     public String reduce() {
-        return "扣减库存成功！port: " + port;
+        return "动态配置服务端口！port: " + port;
     }
 }
 

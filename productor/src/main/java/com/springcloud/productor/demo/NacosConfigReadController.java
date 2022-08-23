@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Slf4j
 @RestController
+// 动态修改 nacos 配置文件，实现变量的热加载
 @RefreshScope
 @RequestMapping("nacosConfigRead")
 public class NacosConfigReadController {
