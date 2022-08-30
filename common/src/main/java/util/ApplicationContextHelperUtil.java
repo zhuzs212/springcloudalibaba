@@ -6,6 +6,8 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
 /**
+ * TODO
+ *
  * 此工具类用于从Spring的上下文中去获取到类，解决@autowird注入空指针的问题：
  * 1: 不能在定时任务中调用别的类;
  * 2: 不能new一个类

@@ -7,5 +7,30 @@ dependencies {
     // spring-cloud-dependencies 2020.0.0 版本不在默认加载bootstrap 文件，如果需要加载bootstrap 文件需要手动添加依赖
     implementation rootProject.ext.dependencies['spring-cloud-starter-bootstrap']
 //    implementation rootProject.ext.dependencies['swagger-annotations']
+
+    // https://mvnrepository.com/artifact/com.alibaba/druid
+    implementation 'com.alibaba:druid:1.2.11'
+
+    // https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter
+    implementation 'com.baomidou:mybatis-plus-boot-starter:3.5.2'
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation 'mysql:mysql-connector-java:8.0.30'
+    // https://mvnrepository.com/artifact/cn.afterturn/easypoi-spring-boot-starter
+    implementation 'cn.afterturn:easypoi-spring-boot-starter:4.4.0'
+
+
+    // Excel导入 https://mvnrepository.com/artifact/com.alibaba/easyexcel
+//    implementation 'com.alibaba:easyexcel:3.1.1'
+//    // https://mvnrepository.com/artifact/cn.afterturn/easypoi-base
+//    implementation 'cn.afterturn:easypoi-base:4.4.0'
+//    // https://mvnrepository.com/artifact/cn.afterturn/easypoi-annotation
+//    implementation 'cn.afterturn:easypoi-annotation:4.4.0'
+//    // https://mvnrepository.com/artifact/cn.afterturn/easypoi-web
+//    implementation 'cn.afterturn:easypoi-web:4.4.0'
+//
+    // https://mvnrepository.com/artifact/xerces/xercesImpl
+    implementation 'xerces:xercesImpl:2.12.2'
+
+
 }
 

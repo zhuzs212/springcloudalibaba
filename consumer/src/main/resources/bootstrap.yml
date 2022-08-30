@@ -1,9 +1,9 @@
 server:
-  port: 8802
+  port: 8801
 
 spring:
   application:
-    name: productor-service
+    name: consumer-service
   profiles:
     active: dev
   cloud:
@@ -17,7 +17,5 @@ spring:
         server-addr: 127.0.0.1:8848
         file-extension: yml
         group: DEFAULT_GROUP
-        prefix: productor-service-dev
-logging:
-  level:
-    com.example.mybatis_plus.sys.mapper: debug
+        prefix: consumer-service-dev
+
