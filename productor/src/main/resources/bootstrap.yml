@@ -18,6 +18,4 @@ spring:
         file-extension: yml
         group: DEFAULT_GROUP
         prefix: productor-service-dev
-logging:
-  level:
-    com.example.mybatis_plus.sys.mapper: debug
+

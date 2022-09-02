@@ -14,7 +14,7 @@ dependencies {
     // https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter
     implementation 'com.baomidou:mybatis-plus-boot-starter:3.5.2'
     // https://mvnrepository.com/artifact/mysql/mysql-connector-java
-    implementation 'mysql:mysql-connector-java:8.0.30'
+    implementation 'mysql:mysql-connector-java:8.0.29'
     // https://mvnrepository.com/artifact/cn.afterturn/easypoi-spring-boot-starter
     implementation 'cn.afterturn:easypoi-spring-boot-starter:4.4.0'
 
