@@ -198,6 +198,15 @@ private enum Singleton {
     - lambda表达式，是实现函数式接口的一个快捷方式
 
 #### 2.2 java.time
+~~~java
+   // 计算两时间点 相差的时、分、秒
+    LocalDateTime startTime = charg.getChagStartDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+    LocalDateTime endTime = charg.getChagEndDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+    Duration duration = Duration.between(startTime, endTime);
+    long hours = duration.toHours();
+    long minutes = duration.toMinutes();
+    long second = 0 == duration.toMillis() ? 0 : duration.toMillis() / 1000;
+~~~
 
 #### 2.3 Optional类
 

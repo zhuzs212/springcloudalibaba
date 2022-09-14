@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springcloud.productor.mapper.TChagRecMapper">
+
+    <resultMap id="BaseResultMap" type="com.springcloud.productor.domain.TChagRec">
+
+        <result property="factId" column="FACT_ID"/>
+        <result property="userId" column="USER_ID"/>
+        <result property="cardNo" column="CARD_NO"/>
+        <result property="evNum" column="EV_NUM"/>
+        <result property="chagStartDate" column="CHAG_START_DATE"/>
+        <result property="chagEndDate" column="CHAG_END_DATE"/>
+        <result property="chagEq" column="CHAG_EQ"/>
+        <result property="chagCost" column="CHAG_COST"/>
+        <result property="sharpEq" column="SHARP_EQ"/>
+        <result property="peakEq" column="PEAK_EQ"/>
+        <result property="platEq" column="PLAT_EQ"/>
+        <result property="valleyEq" column="VALLEY_EQ"/>
+        <result property="svrCost" column="SVR_COST"/>
+        <result property="totalMoney" column="TOTAL_MONEY"/>
+        <result property="closingCost" column="CLOSING_COST"/>
+        <result property="payDate" column="PAY_DATE"/>
+        <result property="payWay" column="PAY_WAY"/>
+        <result property="invoiceFlag" column="INVOICE_FLAG"/>
+        <result property="genTime" column="GEN_TIME"/>
+        <result property="tradeFlowNo" column="TRADE_FLOW_NO"/>
+        <result property="walletBalance" column="WALLET_BALANCE"/>
+        <result property="electWalbalan" column="ELECT_WALBALAN"/>
+        <result property="beginMeterVal" column="BEGIN_METER_VAL"/>
+        <result property="endMeterVal" column="END_METER_VAL"/>
+        <result property="invoiceNo" column="invoice_no"/>
+        <result property="stopReason" column="stop_reason"/>
+
+        <!--            <id property="chagRecId" column="CHAG_REC_ID" />-->
+        <!--            <result property="devId" column="DEV_ID" />-->
+        <!--            <result property="devInfo" column="DEV_INFO" />-->
+        <!--            <result property="orgId" column="ORG_ID" />-->
+        <!--            <result property="regId" column="REG_ID" />-->
+        <!--            <result property="staId" column="STA_ID" />-->
+        <!--            <result property="userName" column="USER_NAME" />-->
+        <!--            <result property="vin" column="VIN" />-->
+        <!--            <result property="bspkId" column="BSPK_ID" />-->
+        <!--            <result property="befChagSoc" column="BEF_CHAG_SOC" />-->
+        <!--            <result property="aftChagSoc" column="AFT_CHAG_SOC" />-->
+        <!--            <result property="sharpCost" column="SHARP_COST" />-->
+        <!--            <result property="peakCost" column="PEAK_COST" />-->
+        <!--            <result property="platCost" column="PLAT_COST" />-->
+        <!--            <result property="valleyCost" column="VALLEY_COST" />-->
+        <!--            <result property="otherCost" column="OTHER_COST" />-->
+        <!--            <result property="consumptionCardNo" column="CONSUMPTION_CARD_NO" />-->
+        <!--            <result property="deductState" column="DEDUCT_STATE" />-->
+        <!--            <result property="validStatus" column="VALID_STATUS" />-->
+        <!--            <result property="remark" column="REMARK" />-->
+        <!--            <result property="particiOrder" column="partici_order" />-->
+        <!--            <result property="orderCtrlTime" column="order_ctrl_time" />-->
+        <!--            <result property="orderCtrlMaxCharge" column="order_ctrl_max_charge" />-->
+        <!--            <result property="orderLowPowerEq" column="order_low_power_eq" />-->
+        <!--            <result property="orderTimeShiftEq" column="order_time_shift_eq" />-->
+        <!--            <result property="orderAllow" column="order_allow" />-->
+        <!--            <result property="applyInvoiceDate" column="apply_invoice_date" />-->
+        <!--            <result property="invoiceDate" column="invoice_date" />-->
+        <!--            <result property="unitedChargeConnectorCount" column="united_charge_connector_count" />-->
+        <!--            <result property="startReason" column="start_reason" />-->
+        <!--            <result property="clearingRec" column="clearing_rec" />-->
+        <!--            <result property="billGroupId" column="bill_group_id" />-->
+        <!--            <result property="chooseGroupId" column="choose_group_id" />-->
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        CHAG_REC_ID
+        ,DEV_ID,DEV_INFO,
+        ORG_ID,REG_ID,STA_ID,
+        FACT_ID,USER_ID,USER_NAME,
+        CARD_NO,VIN,EV_NUM,
+        BSPK_ID,BEF_CHAG_SOC,AFT_CHAG_SOC,
+        CHAG_START_DATE,CHAG_END_DATE,CHAG_EQ,
+        CHAG_COST,SHARP_EQ,SHARP_COST,
+        PEAK_EQ,PEAK_COST,PLAT_EQ,
+        PLAT_COST,VALLEY_EQ,VALLEY_COST,
+        OTHER_COST,SVR_COST,TOTAL_MONEY,
+        CLOSING_COST,CONSUMPTION_CARD_NO,PAY_DATE,
+        PAY_WAY,INVOICE_FLAG,DEDUCT_STATE,
+        VALID_STATUS,GEN_TIME,REMARK,
+        partici_order,order_ctrl_time,order_ctrl_max_charge,
+        order_low_power_eq,order_time_shift_eq,order_allow,
+        TRADE_FLOW_NO,WALLET_BALANCE,ELECT_WALBALAN,
+        BEGIN_METER_VAL,END_METER_VAL,invoice_no,
+        apply_invoice_date,invoice_date,united_charge_connector_count,
+        start_reason,stop_reason,clearing_rec,
+        bill_group_id,choose_group_id
+    </sql>
+</mapper>
