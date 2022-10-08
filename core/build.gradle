@@ -12,5 +12,13 @@ dependencies {
     implementation rootProject.ext.dependencies['jackson-datatype-jdk8']
     implementation rootProject.ext.dependencies['aspectj']
     implementation rootProject.ext.dependencies['junit']
+
+    // Sharding
+    implementation rootProject.ext.dependencies['druid-starter']
+//    implementation 'org.apache.shardingsphere:sharding-jdbc-spring-boot-starter:4.1.1'
+// https://mvnrepository.com/artifact/org.apache.shardingsphere/shardingsphere-jdbc-core-spring-boot-starter
+    implementation 'org.apache.shardingsphere:shardingsphere-jdbc-core-spring-boot-starter:5.2.0'
+
+
 }
 

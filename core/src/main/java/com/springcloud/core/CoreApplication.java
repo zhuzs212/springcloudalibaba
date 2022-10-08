@@ -2,6 +2,7 @@ package com.springcloud.core;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 /**
  *
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2022/5/19 14:06
  */
 @SpringBootApplication(scanBasePackages = {"com.springcloud.core"})
+@EnableAsync
 public class CoreApplication {
     public static void main(String[] args) {
         SpringApplication.run(CoreApplication.class, args);

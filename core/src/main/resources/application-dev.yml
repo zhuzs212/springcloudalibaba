@@ -10,8 +10,6 @@ server:
 spring:
   application:
     name: core
-    # redis
-
 # TODO 因为Springfox使用的路径匹配是基于AntPathMatcher的，而Spring Boot 2.6.X使用的是PathPatternMatcher。
   mvc:
     pathmatch:
