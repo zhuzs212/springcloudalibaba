@@ -1,6 +1,6 @@
 package com.springcloud.core.controller;
 
-import com.springcloud.core.exception.CoreExceptionEnum;
+import com.springcloud.core.constant.CoreExceptionEnum;
 import exception.ServiceException;
 
 /**

@@ -2,7 +2,7 @@ package com.springcloud.core.zhuzsdemo.thread;
 
 import cn.hutool.core.thread.ThreadFactoryBuilder;
 import exception.ServiceException;
-import common.SysExceptionEnum;
+import common.SysBaseEnumEnum;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
@@ -142,7 +142,7 @@ public class ScheduledThreadPoolFactory {
                 threadPoolExecutor.execute(abstractTaskThread);
                 break;
             default:
-                throw new ServiceException(SysExceptionEnum.CREATE_THREAD_EXCEPTION);
+                throw new ServiceException(SysBaseEnumEnum.CREATE_THREAD_EXCEPTION);
         }
 
     }

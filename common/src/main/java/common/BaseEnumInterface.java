@@ -6,18 +6,14 @@ package common;
  * @author zhu_zishuang
  * @date 2021-03-12
  */
-public interface ExceptionInterface {
+public interface BaseEnumInterface {
     /**
-     * 获取错误码
-     *
-     * @return
+     * 获取编码
      */
     int getCode();
 
     /**
      * 获取异常信息
-     *
-     * @return
      */
     String getMessage();
 }

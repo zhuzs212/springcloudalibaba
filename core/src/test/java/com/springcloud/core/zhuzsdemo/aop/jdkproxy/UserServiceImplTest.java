@@ -34,8 +34,6 @@ class UserServiceImplTest {
         UserServiceImpl userService = (UserServiceImpl) proxy.getProxy();
         System.out.println(userService.add(1, 4));
     }
-
-
     @Test
     public void test03() {
 //        /**

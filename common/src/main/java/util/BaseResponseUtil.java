@@ -2,9 +2,9 @@ package util;
 
 import model.BaseResponse;
 import common.Constant;
-import common.ExceptionInterface;
+import common.BaseEnumInterface;
 import exception.ServiceException;
-import common.SysExceptionEnum;
+import common.SysBaseEnumEnum;
 
 /**
  * 通用返回数据模型
@@ -20,7 +20,7 @@ public final class BaseResponseUtil {
     private static final Integer SUCCESS_CODE = 200;
 
     /**
-     * 默认操作成功提示
+     * 默认提示 操作成功
      */
     private static final String DEFAULT_SUCCESS_MESSAGE = "操作成功";
 
@@ -29,11 +29,11 @@ public final class BaseResponseUtil {
      */
     private BaseResponseUtil() {
         // TODO 可抛出异常，防止通过反射实例化对象
-        throw new ServiceException(SysExceptionEnum.SYS_EXCEPTION);
+        throw new ServiceException(SysBaseEnumEnum.SYS_EXCEPTION);
     }
 
     /**
-     * 包裹响应对象，此方法适合写操作没有数据实体场景下调用
+     * 适合 写操作（没有数据实体场景）调用
      *
      * @return 响应实体
      */
@@ -42,7 +42,7 @@ public final class BaseResponseUtil {
     }
 
     /**
-     * 包裹响应对象，此方法适合查询操作有数据实体场景下调用
+     * 适合 查询操作（有数据实体场景）调用
      *
      * @param data 数据实体
      * @return 响应实体
@@ -52,42 +52,43 @@ public final class BaseResponseUtil {
     }
 
     /**
-     * 包裹响应对象，此方法适合 增、删、改 操作有数据实体场景下调用
+     * 适合 增、删、改操作（有数据实体场景）调用
      *
-     * @param operationEnum
-     * @return
+     * @param operationEnum 枚举
+     * @return 响应实体
      */
-    public static BaseResponse<Object> success(ExceptionInterface operationEnum) {
+    public static BaseResponse<Object> success(BaseEnumInterface operationEnum) {
         return success().setCode(operationEnum.getCode()).setMessage(operationEnum.getMessage());
     }
 
     /**
-     * 包裹响应对象，校验框架异常 场景下调用
+     * 校验框架异常场景 调用
      *
-     * @param message 异常消息
+     * @param message 异常提示信息
      * @return 响应实体
      */
     public static BaseResponse<Object> fail(Integer code, String message) {
         return new BaseResponse<>().setStatus(Constant.FAIL).setCode(code).setMessage(message);
     }
 
+
     /**
-     * 包裹响应对象，自定义业务异常 场景下调用
+     * 自定义业务异常场景 调用
      *
-     * @param baseResponseCode
-     * @return
+     * @param baseResponseCode 异常枚举
+     * @return 响应实体
      */
-    public static BaseResponse<Object> fail(ExceptionInterface baseResponseCode) {
+    public static BaseResponse<Object> fail(BaseEnumInterface baseResponseCode) {
         return new BaseResponse<>().setStatus(Constant.FAIL).setCode(baseResponseCode.getCode()).setMessage(baseResponseCode.getMessage());
     }
 
     /**
-     * 包裹响应对象，系统异常 场景下调用
+     * 系统异常场景 调用
      *
-     * @param sysExceptionEnum
+     * @param sysExceptionEnum 异常枚举
      * @return 响应实体
      */
-    public static BaseResponse<Object> error(ExceptionInterface sysExceptionEnum) {
+    public static BaseResponse<Object> error(BaseEnumInterface sysExceptionEnum) {
         return new BaseResponse<>().setStatus(Constant.ERROR).setCode(sysExceptionEnum.getCode()).setMessage(sysExceptionEnum.getMessage());
     }
 }

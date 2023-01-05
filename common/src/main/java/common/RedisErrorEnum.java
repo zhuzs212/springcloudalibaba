@@ -1,12 +1,10 @@
 package common;
 
-import common.ExceptionInterface;
-
 /**
  * @author zhuzishuang
  * @date 2022/5/17
  */
-public enum RedisErrorEnum implements ExceptionInterface {
+public enum RedisErrorEnum implements BaseEnumInterface {
 
     /**
      * 获取redis连接池错误

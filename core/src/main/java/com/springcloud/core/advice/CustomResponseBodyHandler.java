@@ -1,6 +1,6 @@
 package com.springcloud.core.advice;
 
-import com.springcloud.core.constant.OperationEnum;
+import common.OperationEnum;
 import exception.ServiceException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.MethodParameter;
@@ -23,7 +23,7 @@ import java.text.MessageFormat;
  */
 @Slf4j
 @ControllerAdvice(basePackages = "com.zhuzs.admin.controller")
-public class CustomWrapHandler<T> implements ResponseBodyAdvice<T> {
+public class CustomResponseBodyHandler<T> implements ResponseBodyAdvice<T> {
 
     @Override
     public boolean supports(MethodParameter methodParameter, Class<? extends HttpMessageConverter<?>> converterType) {
@@ -39,7 +39,7 @@ public class CustomWrapHandler<T> implements ResponseBodyAdvice<T> {
             throw new ServiceException(OperationEnum.OPERATION_ERROR);
         }
         if (OperationEnum.class.equals(body.getClass())) {
-            log.info(MessageFormat.format("接口: '{}' , 增删改方法！{0}", request.getURI()));
+            log.info(MessageFormat.format("接口: '{}' , 增删改方法！", request.getURI()));
             return (T) BaseResponseUtil.success((OperationEnum) body);
         }
 

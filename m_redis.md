@@ -38,6 +38,8 @@
     - 认定加锁成功
 https://www.jianshu.com/p/7e47a4503b87
 
+#### 4.Redis 发布/订阅功能
+     - https://zhuanlan.zhihu.com/p/136484218
 #### 4.常见面试题
 ![img_r_2.png](readme/img_r_2.png)
 ![img_r_3.png](readme/img_r_3.png)

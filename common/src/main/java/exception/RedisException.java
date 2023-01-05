@@ -1,6 +1,6 @@
 package exception;
 
-import common.ExceptionInterface;
+import common.BaseEnumInterface;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -21,13 +21,13 @@ public class RedisException extends RuntimeException {
     public RedisException(String message) {
     }
 
-    public RedisException(ExceptionInterface e) {
+    public RedisException(BaseEnumInterface e) {
         super(e.getMessage());
         this.errorCode = e.getCode();
         this.errorMessage = e.getMessage();
     }
 
-    public RedisException(ExceptionInterface e, String msg) {
+    public RedisException(BaseEnumInterface e, String msg) {
         super(msg);
         this.errorCode = e.getCode();
         this.errorMessage = msg;
@@ -39,7 +39,7 @@ public class RedisException extends RuntimeException {
         this.errorMessage = msg;
     }
 
-    public RedisException(ExceptionInterface ie, Exception e) {
+    public RedisException(BaseEnumInterface ie, Exception e) {
         super(ie.getMessage());
         this.errorCode = ie.getCode();
         this.errorMessage = e.getMessage();

@@ -1,7 +1,7 @@
 package com.springcloud.core.advice;
 
 import exception.ServiceException;
-import common.SysExceptionEnum;
+import common.SysBaseEnumEnum;
 import lombok.extern.slf4j.Slf4j;
 import model.BaseResponse;
 import org.springframework.validation.FieldError;
@@ -23,13 +23,13 @@ import java.util.stream.Collectors;
 @RestControllerAdvice
 public class CustomExceptionHandler {
     /**
-     * 校验异常处理
+     * 系统参数异常处理
      */
     @ExceptionHandler(MethodArgumentNotValidException.class)
     @ResponseBody
     public BaseResponse<Object> handleMethodArgumentNotValidException(MethodArgumentNotValidException e) {
         log.warn("系统参数校验异常，异常信息：", e);
-        return BaseResponseUtil.fail(SysExceptionEnum.PARAMETER_EMPTY_EXCEPTION.getCode(), e.getBindingResult().getFieldErrors().stream()
+        return BaseResponseUtil.fail(SysBaseEnumEnum.PARAMETER_EMPTY_EXCEPTION.getCode(), e.getBindingResult().getFieldErrors().stream()
                 .map(FieldError::getDefaultMessage).collect(Collectors.joining(",")));
     }
 
@@ -39,7 +39,6 @@ public class CustomExceptionHandler {
     @ExceptionHandler(ServiceException.class)
     @ResponseBody
     public BaseResponse<Object> handleServiceException(ServiceException e) {
-        // 打印业务异常日志
         log.warn("系统业务逻辑异常，异常状态码 {}，异常信息：{}", e.code, e.getMessage(), e);
         return BaseResponseUtil.fail(e.code, e.getMessage());
     }
@@ -51,6 +50,6 @@ public class CustomExceptionHandler {
     @ResponseBody
     public BaseResponse<Object> handleException(Exception e) {
         log.error("系统异常，异常信息：{}", e.getMessage());
-        return BaseResponseUtil.error(SysExceptionEnum.SYS_EXCEPTION);
+        return BaseResponseUtil.error(SysBaseEnumEnum.SYS_EXCEPTION);
     }
 }

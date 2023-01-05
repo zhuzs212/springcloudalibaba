@@ -1,6 +1,6 @@
 package exception;
 
-import common.ExceptionInterface;
+import common.BaseEnumInterface;
 
 /**
  * 业务异常类
@@ -18,9 +18,9 @@ public class ServiceException extends RuntimeException {
     /**
      * 构造器
      *
-     * @param exceptionInfo
+     * @param exceptionInfo 异常枚举
      */
-    public ServiceException(ExceptionInterface exceptionInfo) {
+    public ServiceException(BaseEnumInterface exceptionInfo) {
         super(exceptionInfo.getMessage());
         this.code = exceptionInfo.getCode();
     }
@@ -28,8 +28,8 @@ public class ServiceException extends RuntimeException {
     /**
      * 构造器
      *
-     * @param code
-     * @param message
+     * @param code 异常编码
+     * @param message 异常提示信息
      */
     public ServiceException(int code, String message) {
         super(message);
