@@ -20,8 +20,6 @@ public class TaskDemoServiceImpl implements TaskDemoService {
     public void dailyWriting() {
         // 文件开始位置
         long begin = 0L;
-
-
         try (
                 /*
                  * 创建source表示要复制的文件

@@ -11,7 +11,7 @@ import lombok.Getter;
  * @date 2021-03-12
  */
 @AllArgsConstructor
-public enum SysBaseEnumEnum implements BaseEnumInterface {
+public enum SysExceptionEnum implements BaseEnumInterface {
     /* ===========================User====================================== */
     /**
      * 数据校验异常

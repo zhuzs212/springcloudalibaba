@@ -2,7 +2,7 @@ package com.springcloud.core.interceptor;
 
 import com.springcloud.core.constant.Constant;
 import exception.ServiceException;
-import common.SysBaseEnumEnum;
+import common.SysExceptionEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
@@ -54,7 +54,7 @@ public class SecurityInterceptor implements HandlerInterceptor {
         } else {
             log.info("jumpUrl = {}", jumpUrl);
             // token 为空，鉴权失败
-            throw new ServiceException(SysBaseEnumEnum.TOKEN_IS_EMPTY);
+            throw new ServiceException(SysExceptionEnum.TOKEN_IS_EMPTY);
         }
         return true;
     }

@@ -39,7 +39,7 @@ public class CustomResponseBodyHandler<T> implements ResponseBodyAdvice<T> {
             throw new ServiceException(OperationEnum.OPERATION_ERROR);
         }
         if (OperationEnum.class.equals(body.getClass())) {
-            log.info(MessageFormat.format("接口: '{}' , 增删改方法！", request.getURI()));
+            log.info(MessageFormat.format("接口: '{}' , 增、删、改方法！", request.getURI()));
             return (T) BaseResponseUtil.success((OperationEnum) body);
         }
 

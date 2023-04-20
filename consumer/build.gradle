@@ -7,8 +7,6 @@ dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-loadbalancer'
     implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-sentinel'
 
-    implementation rootProject.ext.dependencies['duolian-common']
-    implementation rootProject.ext.dependencies['duolian-payment-client']
 //    implementation rootProject.ext.dependencies['swagger-annotations']
 
 }

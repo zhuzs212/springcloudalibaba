@@ -4,7 +4,7 @@ import model.BaseResponse;
 import common.Constant;
 import common.BaseEnumInterface;
 import exception.ServiceException;
-import common.SysBaseEnumEnum;
+import common.SysExceptionEnum;
 
 /**
  * 通用返回数据模型
@@ -29,7 +29,7 @@ public final class BaseResponseUtil {
      */
     private BaseResponseUtil() {
         // TODO 可抛出异常，防止通过反射实例化对象
-        throw new ServiceException(SysBaseEnumEnum.SYS_EXCEPTION);
+        throw new ServiceException(SysExceptionEnum.SYS_EXCEPTION);
     }
 
     /**

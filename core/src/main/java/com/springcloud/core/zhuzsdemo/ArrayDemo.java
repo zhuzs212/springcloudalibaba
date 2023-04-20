@@ -13,7 +13,7 @@ public class ArrayDemo {
     public static void main(String[] args) {
 
         int[] arr1 = new int[]{1, 2, 3, 4, 5, 6};
-        int[] arr2 = new int[7];
+        int[] arr2 = new int[6];
         // 数组拷贝1
         sysArrayCopy(arr1, arr2);
 
@@ -32,7 +32,7 @@ public class ArrayDemo {
      * @date 2021-03-03
      */
     public static void sysArrayCopy(int[] arr1, int[] arr2) {
-        System.arraycopy(arr1, 1, arr2, 0, arr2.length);
+        System.arraycopy(arr1, 0, arr2, 0, arr2.length);
         System.out.println(" sysArrayCopy 后 arr2 :" + Arrays.toString(arr2));
     }
 

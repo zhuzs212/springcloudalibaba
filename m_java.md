@@ -1,10 +1,12 @@
 ## 1 Java 基础
 
-#### 1.1 反射 及 动态代理
+#### 1.1 反射(动态代理) 及 javassit
 
 ###### 示例：zhuzsdemo.aop.jdkproxy
 
-###### 1.1.1 Java反射机制概述
+###### 1.1.1 Java反射机制 概述
+
+###### 1.1.2 Javassit 概述
 
 <details>
 
@@ -91,6 +93,7 @@
 </details>
 
 ##### 1.5 Spring 创建的Bean作用域都有哪些？默认是哪一个？
+<details>
 
 ![img_j_4.png](readme/img_j_4.png)
 
@@ -176,6 +179,8 @@ private enum Singleton {
 
 ~~~
 
+</details>
+
 #### 1.6 concurrent 线程安全类
 ##### 1.6.1 ConcurrentHashMap 底层原理
     - JDK1.7 采用了头插法，JDK1.8采用尾插法
@@ -183,10 +188,14 @@ private enum Singleton {
     - HashMap中没有取余运算，而是用与（&）操作 + 扰动机制（hashCode值右移+异或运算，让高位的值参与运算）
 
 #### 1.7 ThreadLocal 原理
+<details>
+
     - 为每个线程提供一个独立的变量副本解决了变量并发访问的冲突问题
     - 可以将类变量放到ThreadLocal类型的对象中，使变量在每个线程中都有独立拷贝，
       不会出现一个线程读取变量时而被另一个线程修改的现象。最常见的ThreadLocal使用场景为用来解决数据库连接、Session管理等。
 ![img_cmp_1.png](readme/img_cmp_1.png)
+
+</details>
 
 ## 2 Java8 新特性
 

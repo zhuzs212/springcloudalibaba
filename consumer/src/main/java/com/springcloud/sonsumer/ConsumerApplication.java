@@ -9,8 +9,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @author zhu_zishuang
  * @date 2022/5/12 18:16
  */
-@SpringBootApplication(scanBasePackages = {"com.springcloud.sonsumer","com.duolian.fls.payment.client.*"})
-@EnableFeignClients(basePackages = "com.duolian.fls.payment.client.feign")
+@SpringBootApplication(scanBasePackages = {"com.springcloud.sonsumer"})
+@EnableFeignClients(basePackages = " ")
 @EnableDiscoveryClient
 public class ConsumerApplication {
     public static void main(String[] args) {

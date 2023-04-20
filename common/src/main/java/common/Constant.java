@@ -14,7 +14,7 @@ public final class Constant {
      */
     private Constant() {
         // TODO 可抛出异常，防止通过反射实例化对象
-        throw new ServiceException(SysBaseEnumEnum.SYS_EXCEPTION);
+        throw new ServiceException(SysExceptionEnum.SYS_EXCEPTION);
     }
 
     /**
