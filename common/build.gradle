@@ -1,5 +1,4 @@
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly rootProject.ext.dependencies['lombok']
     annotationProcessor rootProject.ext.dependencies['lombok']
     implementation rootProject.ext.dependencies['hibernate-validator']
@@ -11,5 +10,7 @@ dependencies {
     implementation rootProject.ext.dependencies['slf4j']
     implementation rootProject.ext.dependencies['fastjson2']
     implementation rootProject.ext.dependencies['mongodb']
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
 //    implementation "org.springframework.boot:spring-boot-starter-data-mongodb:3.0.2"
 }
